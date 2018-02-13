@@ -3,5 +3,12 @@ module.exports = {
   output: {
   	filename: "./lib/bundle.js"
   },
+  module: {
+    loaders: [
+      {
+        test: /\.js$/
+      }
+    ]
+  },
   devtool: 'source-map',
 };

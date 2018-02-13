@@ -7,6 +7,39 @@
     <script type="text/javascript" src="bundle.js"></script>
   </head>
   <body>
-
+    <div id="container">
+      <div id="game">
+        <div id="computerContainer">
+          <div id="computerHand"/>
+        </div>
+        <div id="discardContainer">
+          <div id="wildMenu" class="hide">
+            <div id="triangle">
+              <div>Choose your color</div>
+              <div class="wildButton" id="Red"/>
+              <div class="wildButton" id="Green"/>
+              <div class="wildButton" id="Blue"/>
+              <div class="wildButton" id="Yellow"/>
+            </div>
+            <div id="overlay" class="hide"></div>
+            <div id="gameOverScreen" class="hide">
+              <div id="gameOverMessage">
+                <div id="gameOverMenu">Play again?
+                  <div id="yesButton">Yes</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="discardPile"/>
+          <div id="playerContainer">
+            <div id="playerHand"/>
+            <div id="playbar">
+              <div id="drawButton">Draw</div>
+              <div id="passButton" class="disabled">Pass</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
