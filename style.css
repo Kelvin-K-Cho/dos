@@ -16,14 +16,12 @@
        url("./fonts/montserrat-regular-webfont.woff") format("woff");
 }
 
-/* Global */
-
 body {
   background-color: #EEEEEE;
-  -webkit-user-select: none; /* Prevent highlight on double-click */
-  -moz-user-select: none; /* Prevent highlight on double-click */
-  -ms-user-select: none; /* Prevent highlight on double-click */
-  user-select: none; /* Prevent highlight on double-click */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: default;
 }
 
@@ -33,7 +31,8 @@ body {
   position: absolute;
 }
 
-#gameContainer {
+#game {
+  height: 100%;
   width: 70%;
   margin: auto;
   padding-right: 5%;
@@ -54,271 +53,16 @@ img {
   display: block;
 }
 
-/* Computer section */
-
 #computerContainer {
   width: 100%;
 }
 
-#computerFace { /* Force image contained by div to resize relative to div */
-  width: 11.15%;
-  padding-top: 1.5%;
-  padding-bottom: 0.85%;
-  padding-left: 1.55%;
-  opacity: 1;
-  -webkit-transition: opacity 0.4s;
-  -moz-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
-  transition: opacity 0.4s;
-  position: relative;
-}
-
-#computerFace.mute {
-  opacity: 0.5;
-}
-
 #computerHand {
-  -webkit-border-radius: 0.3em; /* Border radius for cards to inherit */
-  -moz-border-radius: 0.3em; /* Border radius for cards to inherit */
-  border-radius: 0.3em; /* Border radius for cards to inherit */
-  white-space: nowrap; /* Prevent cards from breaking to new line */
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  border-radius: 0.3em;
+  white-space: nowrap;
 }
-
-/* Info section */
-
-#infoButton {
-  width: 2.94%;
-  height: 5.5%;
-  top: 2%;
-  left: 85.7%;
-  border-radius: 50%;
-  color: #9098A2;
-  font-family: "Montserrat-Regular";
-  font-size: 93%;
-  text-align: center;
-  line-height: 142%;
-  cursor: pointer;
-  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
-  position: absolute;
-}
-
-#infoButton:hover {
-  background-color: #005780;
-  color: #FFFFFF;
-}
-
-#infoButton:active {
-  top: 2.1%;
-}
-
-#infoScreen {
-  width: 55%;
-  height: 52%;
-  top: 15%;
-  left: 20%;
-  z-index: 1001;
-  padding-top: 2.5%;
-  padding-right: 2.5%;
-  padding-bottom: 4%;
-  padding-left: 2.5%;
-  border-radius: 0.5em;
-  background-color: #FFFFFF;
-  color: #424242;
-  font-family: "Montserrat-Light";
-  font-size: 43%;
-  position: absolute;
-}
-
-#infoScreen.hide {
-  visibility: hidden;
-}
-
-#exitButton {
-  top: -0.2%;
-  left: 96.7%;
-  color: #9098A2;
-  font-family: "Montserrat-Light";
-  font-size: 250%;
-  cursor: pointer;
-  position: absolute;
-}
-
-#exitButton:hover {
-  color: #005780;
-}
-
-#infoContainer {
-  width: 95%;
-  height: 99.4%;
-  padding-top: 3%;
-  padding-right: 2.5%;
-  padding-left: 2.5%;
-  background-color: #EEEEEE;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  position: relative;
-}
-
-#gameMap {
-  width: 56.6%;
-  padding-left: 3.7%;
-  float: right;
-}
-
-#rulesContainer {
-  width: 37.7%;
-  height: 83%;
-  padding-left: 2%;
-}
-
-#rulesContainer .head {
-  padding-top: 3%;
-  color: #00A6F2;
-  font-size: 110%;
-  text-align: center;
-}
-
-#rulesContainer .paragraph {
-  padding-top: 3.8%;
-  font-size: 85%;
-  line-height: 160%;
-}
-
-#gameTips {
-  width: 37.88%;
-  padding-right: 4.5%;
-  padding-bottom: 5%;
-  padding-left: 1.5%;
-  background-color: #EEEEEE;
-  float: left;
-}
-
-#specialCardsContainer {
-  width: 99%;
-  background-color: #FAFAFA;
-}
-
-#specialCardsContainer .head {
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-left: 46.8%;
-  color: #00D970;
-  font-size: 110%;
-}
-
-.paragraphHead {
-  font-size: 113%;
-  font-weight: bold;
-}
-
-#specialCardsContainer .paragraph {
-  padding-bottom: 2.5%;
-  font-size: 85%;
-  line-height: 160%;
-}
-
-#specialCardsContainer div:nth-child(2) {
-  width: 25.07%;
-  padding-left: 2.5%;
-  vertical-align: top;
-  display: inline-block;
-}
-
-#specialCardsContainer div:nth-child(3) {
-  width: 25.07%;
-  padding-right: 2.5%;
-  display: inline-block;
-}
-
-#specialCardsContainer div:nth-child(4) {
-  width: 25.07%;
-  padding-left: 2.5%;
-  vertical-align: top;
-  display: inline-block;
-}
-
-#specialCardsContainer div:nth-child(5) {
-  width: 25.07%;
-  padding-right: 2.5%;
-  display: inline-block;
-}
-
-.italic {
-  font-style: italic;
-}
-
-#JUNOvsUNO {
-  width: 44%;
-  padding-right: 3%;
-  padding-bottom: 2.5%;
-  padding-left: 2.5%;
-  background-color: #FFFFFF;
-  font-size: 110%;
-  clear: both;
-  float: left;
-  display: inline-block;
-}
-
-#JUNOvsUNO .head {
-  padding-top: 5%;
-  color: #F21642;
-}
-
-#JUNOvsUNO .paragraph {
-  padding-top: 3.8%;
-  font-size: 85%;
-  line-height: 160%;
-}
-
-#about {
-  width: 42%;
-  padding-right: 3%;
-  padding-left: 2.5%;
-  margin-left: 2%;
-  font-size: 110%;
-  float: left;
-  display: inline-block;
-}
-
-#about .head {
-  padding-top: 5%;
-  color: #000000;
-}
-
-#about .paragraph {
-  padding-top: 3.8%;
-  font-size: 85%;
-  line-height: 160%;
-}
-
-#about div:nth-child(3) {
-  padding-top: 4%;
-}
-
-a:link {
-  color: #757575;
-}
-
-a:hover {
-  color: #757575;
-}
-
-a:active {
-  color: #757575;
-}
-
-a:visited {
-  color: #757575;
-}
-
-#infoContainer > div:last-of-type {
-  padding-bottom: 3%;
-  clear: both;
-}
-
-/* Discard section */
 
 #discardPileContainer {
   width: 100%;
@@ -327,76 +71,10 @@ a:visited {
 }
 
 #discardPile {
-  -webkit-border-radius: 0.3em; /* Border radius for cards to inherit */
-  -moz-border-radius: 0.3em; /* Border radius for cards to inherit */
-  border-radius: 0.3em; /* Border radius for cards to inherit */
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  border-radius: 0.3em;
 }
-
-/* Welcome message */
-
-#welcomeMessage {
-  width: 26.6%;
-  height: 29.2%;
-  top: 46.5%;
-  left: 5.5%;
-  padding-left: 2.4%;
-  background-color: #005780;
-  font-family: "Montserrat-Light";
-  font-size: 43%;
-  line-height: 160%;
-  visibility: visible;
-  white-space: nowrap;
-  opacity: 1;
-  webkit-transition: opacity 0.25s, visibility 0.25s;
-  -moz-transition: opacity 0.25s, visibility 0.25s;
-  -ms-transition: opacity 0.25s, visibility 0.25s;
-  -o-transition: opacity 0.25s, visibility 0.25s;
-  transition: opacity 0.25s, visibility 0.25s;
-  position: absolute;
-  display: inline-block;
-}
-
-#welcomeMessage.hide {
-  opacity: 0;
-  visibility: hidden;
-}
-
-#welcomeMessage div:first-child {
-  padding-top: 3.3%;
-  color: #FFFFFF;
-  display: inline-block;
-}
-
-#triangleDown {
-  width: 5.64%;
-  top: 100%;
-  left: 0%;
-  padding-bottom: 4%; /* Width / 1.41 */
-  overflow: hidden;
-  position: absolute;
-}
-
-#triangleDown:before {
-  width: 100%;
-  height: 100%;
-  top: 0%;
-  left: 0%;
-  content: "";
-  background-color: #005780;
-  -webkit-transform-origin: left bottom;
-  -moz-transform-origin: left bottom;
-  -ms-transform-origin: left bottom;
-  -o-transform-origin: left bottom;
-  transform-origin: left bottom;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  position: absolute;
-}
-
-/* Wild menu */
 
 #wildMenu {
   width: 29.3%;
@@ -580,41 +258,17 @@ a:visited {
   transition: opacity 0.15s, transform 0.15s;
 }
 
-/* Player section */
 
-#playerContainer {
+#humanContainer {
   width: 100%;
 }
 
-#playerHead {
-  padding-top: 1.45%;
-  position: relative;
+#humanHand {
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  border-radius: 0.3em;
+  white-space: nowrap;
 }
-
-#playerFace { /* Force image contained by div to resize relative to div */
-  width: 11.15%;
-  top: -215%;
-  padding-left: 1.55%;
-  opacity: 1;
-  -webkit-transition: opacity 0.4s;
-  -moz-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
-  transition: opacity 0.4s;
-  position: absolute;
-}
-
-#playerFace.mute {
-  opacity: 0.5;
-}
-
-#playerHand {
-  -webkit-border-radius: 0.3em; /* Border radius for cards to inherit */
-  -moz-border-radius: 0.3em; /* Border radius for cards to inherit */
-  border-radius: 0.3em; /* Border radius for cards to inherit */
-  white-space: nowrap; /* Prevent cards from breaking to new line */
-}
-
-/* Cards */
 
 .card {
   width: 12.8%;
@@ -627,7 +281,7 @@ a:visited {
   font-size: 95%;
   text-align: center;
   line-height: 120%;
-  white-space: normal; /* Force card text to wrap */
+  white-space: normal;
   opacity: 1;
   -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
@@ -640,7 +294,7 @@ a:visited {
   display: inline-block;
 }
 
-.card:before { /* Set card height relative to width */
+.card:before {
   padding-top: 148%;
   content: "";
   display: block;
@@ -667,7 +321,7 @@ a:visited {
   cursor: not-allowed;
 }
 
-#playerHand .card {
+#humanHand .card {
   cursor: pointer;
 }
 
@@ -786,19 +440,17 @@ a:visited {
   display: inline-block;
 }
 
-#placeholder:before { /* Set card height relative to width */
+#placeholder:before {
   padding-top: 148%;
   content: "";
   display: block;
 }
 
-/* Sidebar */
-
 #sidebar {
   width: 5.49%;
   height: 25.15%;
-  top: 64.6%;
-  left: 10%;
+  top: 75%;
+  left: 47%;
   position: absolute;
 }
 
@@ -837,8 +489,6 @@ a:visited {
 #passButton:active {
   top: 20%;
 }
-
-/* Game over */
 
 #overlay {
   width: 100%;

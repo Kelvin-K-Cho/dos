@@ -4,42 +4,40 @@
     <meta charset="utf-8">
     <title>Dos</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="application/javascript" src="./lib/bundle.js"></script>
   </head>
   <body>
-    <script type="application/javascript" src="./lib/bundle.js"></script>
     <div id="container">
-      <div id="game">
-        <div id="computerContainer">
-          <div id="computerHand"/>
-        </div>
-        <div id="discardContainer">
-          <div id="wildMenu" class="hide">
-            <div id="triangle">
-              <div>Choose your color</div>
-              <div class="wildButton" id="Red"/>
-              <div class="wildButton" id="Green"/>
-              <div class="wildButton" id="Blue"/>
-              <div class="wildButton" id="Yellow"/>
-            </div>
-            <div id="overlay" class="hide"></div>
-            <div id="gameOverScreen" class="hide">
-              <div id="gameOverMessage">
-                <div id="gameOverMenu">Play again?
-                  <div id="yesButton">Yes</div>
-                </div>
-              </div>
-            </div>
+			<div id="game">
+				<div id="computerContainer">
+					<div id="computerHand"></div>
+				</div>
+				<div id="discardPileContainer">
+					<div id="wildMenu" class="hide">
+						<div id="triangleLeft"></div>
+						<div>Choose a color</div>
+						<div class="wildButton" id="Red"></div>
+						<div class="wildButton" id="Green"></div>
+						<div class="wildButton" id="Blue"></div>
+						<div class="wildButton" id="Yellow"></div>
+					</div>
+					<div id="overlay" class="hide"></div>
+					<div id="gameOverScreen" class="hide">
+						<div id="gameOverMessage"></div>
+						<div id="gameOverMenu">Play again?
+							<div id="yesButton">yes</div>
+						</div>
+					</div>
+					<div id="discardPile"></div>
+				</div>
+				<div id="humanContainer">
+					<div id="humanHand"></div>
+          <div id="sidebar">
+            <div id="drawButton">draw</div>
+            <div id="passButton" class="disabled">pass</div>
           </div>
-          <div id="discardPile"/>
-          <div id="humanContainer">
-            <div id="humanHand"/>
-            <div id="playbar">
-              <div id="drawButton">Draw</div>
-              <div id="passButton" class="disabled">Pass</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+				</div>
+			</div>
+		</div>
   </body>
 </html>
