@@ -10,8 +10,8 @@ Dos is a javascript version of Uno.  The rules are the same aside from a few key
 
 ### Functionality & MVP
 
-In Dos, players will need to be able to:
-- [x] Draw, play cards and pass turn.
+In Dos,
+- [x] Players can draw, play cards and pass turn.
 - [x] AI plays cards as well and attempts to win.
 - [x] Game is replayable.
 
@@ -27,23 +27,23 @@ This project will be implemented with the following:
 
 - Vanilla Javascript for overall gameplay.
 - HTML/CSS for visuals and styling.
-- Webpack to for bundling and to keep the program modular, enforcing Separation of Concerns.
+- Webpack for bundling and modularize program, enforcing Separation of Concerns.
 
 ### Implementation Timeline
 
 **Day 1**: Setup node modules.  Create webpack and get the outline for each class done.
 
-- [ ] Setup webpack.
-- [ ] Create all the classes inside the lib folder.
+- [x] Setup webpack.
+- [x] Create all the classes inside the lib folder.
 
 **Day 2**: Setup index.html.  Complete the basic game class along with the deck functionality.
-- [ ] Setup index.html
-- [ ] Write game class.
-- [ ] Write deck class.
+- [x] Setup index.html
+- [x] Write game class.
+- [x] Write deck class.
 
 **Day 3**: Write player/computer classes along with their functionalities.
-- [ ] Write player class.
-- [ ] Write computer class.
+- [x] Write player class.
+- [x] Write computer class.
 
 **Day 4**: Style the webpage and fix up outstanding errors.
-- [ ] Style the html page.
+- [x] Style the html page.
