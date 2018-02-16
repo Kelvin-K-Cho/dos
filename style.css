@@ -16,9 +16,6 @@
        url("./fonts/montserrat-regular-webfont.woff") format("woff");
 }
 
-/* @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:900);} */
-
-
 h1 {
   font-size: 1.7em;
   margin: 3px;
@@ -29,9 +26,8 @@ h1 {
   width: 70%;
   text-align: center;
   height: 5%;
-  /* top: -4%; */
   font-family: "Montserrat-Light";
-  /* border: 1px solid black; */
+
   /* Chrome, Safari, Opera */
   -webkit-animation: rainbow 3s infinite;
 
@@ -137,7 +133,7 @@ img {
   width: 5.64%;
   top: 0%;
   left: -5.64%;
-  padding-bottom: 4%; /*Width / 1.41 */
+  padding-bottom: 4%;
   overflow: hidden;
   position: absolute;
 }
@@ -509,15 +505,12 @@ img {
 #sidebar {
   display: flex;
   width: 10%;
-  /* height: 25.15%; */
   top: 93%;
   left: 41.3%;
   position: absolute;
 }
 
 #sidebar > div {
-  /* width: 10%; */
-  /* margin: auto; */
   border-radius: 3px;
   margin: 29% 14%;
   padding: 4% 8%;
@@ -627,8 +620,6 @@ img {
   width: 20%;
   padding: 2% 1% 3% 1%;
   border-radius: 3px;
-  /* padding-top: 3%;
-  padding-bottom: 4%; */
   margin-left: 4%;
   background-color: #FFFFFF;
   color: #818E99;
