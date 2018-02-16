@@ -11,9 +11,9 @@ Dos is a javascript version of Uno.  The rules are the same aside from a few key
 ### Functionality & MVP
 
 In Dos,
-- [ ] Players can draw, play cards and pass turn.
-- [ ] AI plays cards as well and attempts to win.
-- [ ] Game is replayable.
+- [x] Players can draw, play cards and pass turn.
+- [x] AI plays cards as well and attempts to win.
+- [x] Game is replayable.
 
 ### Wireframes
 
