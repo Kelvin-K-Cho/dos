@@ -16,12 +16,30 @@
        url("./fonts/montserrat-regular-webfont.woff") format("woff");
 }
 
+/* @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:900);} */
+
+
 h1 {
+  font-size: 1.7em;
+  margin: 3px;
+  padding: 1.5%;
+  line-height: 100%;
+  border-radius: 13px;
   position: absolute;
   width: 70%;
   text-align: center;
   height: 5%;
-  top: -2%;
+  /* top: -4%; */
+  font-family: "Montserrat-Light";
+  /* border: 1px solid black; */
+  /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 3s infinite;
+
+  /* Internet Explorer */
+  -ms-animation: rainbow 3s infinite;
+
+  /* Standard Syntax */
+  animation: rainbow 3s infinite;
 }
 
 body {
@@ -63,7 +81,8 @@ img {
 }
 
 #computerContainer {
-  top: 15%;
+  left: 1%;
+  top: 13%;
   position:relative;
   width: 100%;
 }
@@ -76,7 +95,7 @@ img {
 }
 
 #discardPileContainer {
-  top: 15%;
+  top: 13%;
   width: 100%;
   padding-top: 1.5%;
   position: relative;
@@ -272,7 +291,8 @@ img {
 
 
 #humanContainer {
-  top: 17%;
+  left:1%;
+  top: 15%;
   position: relative;
   width: 100%;
 }
@@ -285,13 +305,13 @@ img {
 }
 
 .card {
-  width: 12.8%;
+  width: 12.5%;
   bottom: 0px;
   margin-right: 0.74%;
   margin-left: 0.74%;
   border-radius: inherit;
   color: #FFFFFF;
-  font-family: "Farray";
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 95%;
   text-align: center;
   line-height: 120%;
@@ -438,6 +458,32 @@ img {
   100% { transform: translateX(0%); }
 }
 
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}
+}
+
 .playCard {
   opacity: 0.5;
   webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -465,7 +511,7 @@ img {
   width: 10%;
   /* height: 25.15%; */
   top: 93%;
-  left: 42.5%;
+  left: 41.3%;
   position: absolute;
 }
 
@@ -489,6 +535,12 @@ img {
   background-color: #005780;
   color: #FFFFFF;
   cursor: pointer;
+}
+
+#sidebar > .disabled {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }
 
 #drawButton {
