@@ -27,7 +27,7 @@ This project will be implemented with the following:
 
 - Vanilla Javascript for overall gameplay.
 - HTML/CSS for visuals and styling.
-- Webpack for bundling and modularize program, enforcing Separation of Concerns.
+- Webpack to bundle and modularize program, enforcing Separation of Concerns.
 
 ### Implementation Timeline
 
