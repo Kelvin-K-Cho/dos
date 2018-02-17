@@ -1,49 +1,60 @@
-## Dos
+# Dos Production Readme
 
-### Background and Overview
-
-Dos is a javascript version of Uno.  The rules are the same aside from a few key differences.
+Dos, is a reimagined version of the classic card game, Uno.  Written in JavaScript, the rules are the same aside from a few key differences.
 
 1. There are no points.  Players only play against a single AI opponent.
 2. There are no Reverse cards and Draw Two does not skip a turn.
 3. Uno does not need to be declared.
 
-### Functionality & MVP
+Application Link: [Dos](https://kelvin-k-cho.github.io/dos/)
 
-In Dos,
-- [x] Players can draw, play cards and pass turn.
-- [x] AI plays cards as well and attempts to win.
-- [x] Game is replayable.
+![Game](https://s3-us-west-1.amazonaws.com/hallyu-dev/images/Screen+Shot+2018-02-16+at+10.10.20+PM.png)
 
-### Wireframes
+# Features
 
-The app will be a single screen where users can either click to play viable cards, click to draw a card and click to pass the turn once a card has been drawn.
++ Players can draw, play cards and pass turn.
++ AI plays cards as well and attempts to win.
++ Game is replayable.
 
-![wireframes](https://s3-us-west-1.amazonaws.com/hallyu-dev/images/Screen+Shot+2018-02-11+at+8.51.44+PM.png)
+# Challenges
+1.  Rendering the hands would sometimes bug out because the id's of the cards would overlap and the app would draw over a drawn card.  In order to minimize this occurrence, I added some randomization to the id generated when constructing a deck of color coded cards.
 
-### Architecture and Technologies
+```
+for(let i = 0; i < colors.length; i++) {
+  for(let j = 0; j < numbers.length; j++) {
+    let card = new Card(
+      String([numbers[j] + random(0, 10000)]),
+      numbers[j],
+      colors[i]);
+    this.push(card);
+  }
+}
+```
+2.  In order to provide user interaction with the game, event listeners were added onto the card elements.  However, due to separating the functions under each class, the context is lost when invoking another instance method.  In order to preserve the context, binding was needed.
 
-This project will be implemented with the following:
+```
+document.addEventListener("click", function(event) {
+
+  let playable = this.findPlayable(discardPile);
+
+  if(document.getElementById("humanHand").className !== "disabled" && event.target.parentNode.id === "humanHand" && event.target.classList.contains("card")) {
+    this.humanClickCard(event, playable, discardPile, computerHand, deck);
+  } else if (event.target.id === "drawButton" && event.target.className !== "disabled") {
+    this.humanDrawCard(deck, discardPile, event);
+  } else if (event.target.id === "passButton" && document.getElementById("drawButton").className === "disabled" && event.target.className !== "disabled") {
+    this.humanPass(computerHand, discardPile, deck, event);
+  }
+
+}.bind(this));
+```
+
+# Technology
+
+Dos is designed with the following:
 
 - Vanilla Javascript for overall gameplay.
 - HTML/CSS for visuals and styling.
 - Webpack to bundle and modularize program, enforcing Separation of Concerns.
 
-### Implementation Timeline
-
-**Day 1**: Setup node modules.  Create webpack and get the outline for each class done.
-
-- [x] Setup webpack.
-- [x] Create all the classes inside the lib folder.
-
-**Day 2**: Setup index.html.  Complete the basic game class along with the deck functionality.
-- [x] Setup index.html
-- [x] Write game class.
-- [x] Write deck class.
-
-**Day 3**: Write player/computer classes along with their functionalities.
-- [x] Write player class.
-- [x] Write computer class.
-
-**Day 4**: Style the webpage and fix up outstanding errors.
-- [x] Style the html page.
+# Future Implementation
++ Add a modal with an event listener to display how to play to users.
