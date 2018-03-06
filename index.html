@@ -15,6 +15,41 @@
         <h1>Dos: Simplified Uno</h1>
 				<div id="computerContainer">
 					<div id="computerHand"></div>
+          <div id="infoButton">?</div>
+          <div id="infoScreen" class="hide">
+            <div id="exitButton">&times;</div>
+            <div id="infoContainer">
+              <div id="gameMap"><img src="./assets/dosOverview.png" alt="game map"></div>
+              <div id="rulesContainer">
+                <div class="head">How To Play</div>
+                <div class="paragraph">Just like in Uno, the object of Dos is to empty your hand before the opponent does.</div>
+                <div class="paragraph">The game works similar to Crazy Eights where you must aim to match the top card on the discard pile with a similar card in your hand.  Your options include any card with the same color, any card with the same number or any wild card.</div>
+                <div class="paragraph">If you are unable or unwilling to match the top card on the discard pile.  You may choose to draw a card.  At that time, you can choose to play your newly drawn card or pass your turn to your opponent.</div>
+              </div>
+                <div id="unoCards"><img src="./assets/unoCards.png" alt="unoCards"></div>
+                <div id="specialCardsContainer">
+                  <div class="head">Special Cards</div>
+                  <div class="paragraph"><span class="paragraphHead">Skip</span><br>Skip the other player's turn.<br>Chain your cards to play more than 1 card at a time.</div>
+                  <div class="paragraph"><span class="paragraphHead">Draw Two</span><br>Force your opponent to draw two cards.</div>
+                  <div class="paragraph"><span class="paragraphHead">Wild</span><br>Change the color of the top card on the discard pile.</div>
+                  <div class="paragraph"><span class="paragraphHead">Wild Draw Four</span><br>Change the color of the top card on the discard pile<span class="italic">and</span> force your opponent to draw four cards.</div>
+              </div>
+              <div id="DosVsUno">
+                <div class="head">How is this different from Uno?</div>
+                <div class="paragraph">This game was designed to be single player only.</div>
+                <div class="paragraph">Reverse cards do not exist.</div>
+                <div class="paragraph">Draw Two does not skip the opponent's turn.</div>
+                <div class="paragraph">You may choose to play a different card than the one you drew.</div>
+                <div class="paragraph">Uno does not need to be declared.</div>
+              </div>
+              <div id="about">
+                <div class="head">About Me</div>
+                <div class="paragraph">I am a software developer focused in the San Francisco Bay Area.  This project was designed to showcase Object Oriented Programming combined with Webpack in a JavaScript setting.  You can find my other works on github.  </div>
+                <div class="paragraph">Please find me here: <a href="https://github.com/Kelvin-K-Cho/">GitHub</a>.</div>
+              </div>
+              <div></div>
+            </div>
+          </div>
 				</div>
 				<div id="discardPileContainer">
 					<div id="wildMenu" class="hide">

@@ -27,15 +27,6 @@ h1 {
   text-align: center;
   height: 5%;
   font-family: "Montserrat-Light";
-
-  /* Chrome, Safari, Opera */
-  -webkit-animation: rainbow 3s infinite;
-
-  /* Internet Explorer */
-  -ms-animation: rainbow 3s infinite;
-
-  /* Standard Syntax */
-  animation: rainbow 3s infinite;
 }
 
 body {
@@ -344,6 +335,242 @@ img {
 #computerHand .cardText {
   color: #FFFFFF;
   opacity: 0.7;
+}
+
+#infoButton {
+  width: 3.00%;
+  height: 15.5%;
+  top: -40%;
+  right: -2%;
+  border-radius: 50%;
+  color: #9098A2;
+  font-family: "Montserrat-Regular";
+  font-size: 75%;
+  text-align: center;
+  line-height: 142%;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  position: absolute;
+}
+
+#infoButton:hover {
+  background-color: #005780;
+  color: #FFFFFF;
+}
+
+#infoButton:active {
+  top: -40%;
+}
+
+#infoScreen {
+  width: 55%;
+  height: 200%;
+  top: 15%;
+  left: 20%;
+  z-index: 1001;
+  padding-top: 2.5%;
+  padding-right: 2.5%;
+  padding-bottom: 4%;
+  padding-left: 2.5%;
+  border-radius: 0.5em;
+  background-color: #FFFFFF;
+  color: #424242;
+  font-family: "Montserrat-Light";
+  font-size: 43%;
+  position: absolute;
+}
+
+#infoScreen.hide {
+  visibility: hidden;
+}
+
+#exitButton {
+  top: -1.5%;
+  right: 1%;
+  color: #9098A2;
+  font-family: "Montserrat-Light";
+  font-size: 250%;
+  cursor: pointer;
+  position: absolute;
+}
+
+#exitButton:hover {
+  color: #005780;
+}
+
+#infoContainer {
+  width: 95%;
+  height: 99.4%;
+  padding-top: 3%;
+  padding-right: 2.5%;
+  padding-left: 2.5%;
+  background-color: #EEEEEE;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+}
+
+#gameMap {
+  width: 56.6%;
+  padding-top: 15%;
+  padding-left: 3.7%;
+  float: right;
+}
+
+#rulesContainer {
+  width: 37.7%;
+  height: 83%;
+  padding-left: 2%;
+}
+
+#rulesContainer .head {
+  padding-top: 3%;
+  color: #00A6F2;
+  font-size: 110%;
+  text-align: center;
+}
+
+#rulesContainer .paragraph {
+  padding-top: 3.8%;
+  font-size: 85%;
+  line-height: 160%;
+}
+
+#unoCards {
+  width: 37.88%;
+  padding-top: 30%;
+  padding-right: 4.5%;
+  padding-bottom: 5%;
+  padding-left: 1.5%;
+  background-color: #EEEEEE;
+  float: right;
+}
+
+#specialCardsContainer {
+  width: 99%;
+  height: 90%;
+  background-color: #EEEEEE;
+}
+
+#specialCardsContainer .head {
+  background-color: #EEEEEE;
+  padding-top: 10%;
+  padding-bottom: 4%;
+  padding-left: 12.8%;
+  color: #00D970;
+  font-size: 110%;
+}
+
+.paragraphHead {
+  font-size: 113%;
+  font-weight: bold;
+}
+
+#specialCardsContainer .paragraph {
+  padding-bottom: 2.5%;
+  font-size: 85%;
+  line-height: 160%;
+}
+
+#specialCardsContainer div:nth-child(2) {
+  width: 25.07%;
+  padding-left: 2.5%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+#specialCardsContainer div:nth-child(3) {
+  width: 25.07%;
+  padding-right: 2.5%;
+  display: inline-block;
+}
+
+#specialCardsContainer div:nth-child(4) {
+  width: 25.07%;
+  padding-left: 2.5%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+#specialCardsContainer div:nth-child(5) {
+  width: 25.07%;
+  padding-right: 2.5%;
+  display: inline-block;
+}
+
+.italic {
+  font-style: italic;
+}
+
+#DosVsUno {
+  width: 44%;
+  padding-right: 3%;
+  padding-bottom: 2.5%;
+  padding-left: 2.5%;
+  background-color: #FFFFFF;
+  font-size: 110%;
+  clear: both;
+  float: left;
+  display: inline-block;
+}
+
+#DosVsUno .head {
+  padding-top: 5%;
+  color: #F21642;
+}
+
+#DosVsUno .paragraph {
+  padding-top: 3.8%;
+  font-size: 85%;
+  line-height: 160%;
+}
+
+#about {
+  width: 42%;
+  padding-right: 3%;
+  padding-left: 2.5%;
+  margin-left: 2%;
+  font-size: 110%;
+  float: left;
+  display: inline-block;
+}
+
+#about .head {
+  padding-top: 5%;
+  color: gold;
+}
+
+#about .paragraph {
+  padding-top: 3.8%;
+  font-size: 85%;
+  line-height: 160%;
+}
+
+#about div:nth-child(3) {
+  padding-top: 4%;
+}
+
+a:link {
+  color: #757575;
+}
+
+a:hover {
+  color: #757575;
+}
+
+a:active {
+  color: #757575;
+}
+
+a:visited {
+  color: #757575;
+}
+
+#infoContainer > div:last-of-type {
+  padding-bottom: 3%;
+  clear: both;
 }
 
 #discardPile .card {
