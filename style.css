@@ -74,6 +74,23 @@ img {
   width: 100%;
 }
 
+#computerFace {
+  width: 11.15%;
+  padding-top: 1.5%;
+  padding-bottom: 0.85%;
+  padding-left: 1.55%;
+  opacity: .75;
+  -webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  position: absolute;
+}
+
+#computerFace.mute {
+  opacity: 0;
+}
+
 #computerHand {
   -webkit-border-radius: 0.3em;
   -moz-border-radius: 0.3em;
@@ -95,10 +112,11 @@ img {
 }
 
 #wildMenu {
+  z-index: 3;
   width: 29.3%;
   height: 18%;
   top: 40%;
-  left: 59%;
+  left: 57.5%;
   padding-top: 1%;
   padding-left: 2.4%;
   background-color: #005780;
@@ -282,6 +300,24 @@ img {
   top: 15%;
   position: relative;
   width: 100%;
+}
+
+#humanFace {
+  z-index: 2;
+  width: 11.15%;
+  top: -70%;
+  right: 2.5%;
+  padding-left: 1.55%;
+  opacity: .75;
+  -webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  position: absolute;
+}
+
+#humanFace.mute {
+  opacity: 0;
 }
 
 #humanHand {
