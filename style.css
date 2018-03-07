@@ -374,7 +374,7 @@ img {
 }
 
 #infoButton {
-  width: 3.00%;
+  width: 3.1%;
   height: 15.5%;
   top: -40%;
   right: -2%;
@@ -469,14 +469,14 @@ img {
 }
 
 #rulesContainer .paragraph {
-  padding-top: 3.8%;
+  padding-top: 5.8%;
   font-size: 85%;
   line-height: 160%;
 }
 
 #unoCards {
   width: 37.88%;
-  padding-top: 30%;
+  padding-top: 20%;
   padding-right: 4.5%;
   padding-bottom: 5%;
   padding-left: 1.5%;
@@ -486,15 +486,15 @@ img {
 
 #specialCardsContainer {
   width: 99%;
-  height: 90%;
+  height: 80%;
   background-color: #EEEEEE;
 }
 
 #specialCardsContainer .head {
   background-color: #EEEEEE;
-  padding-top: 10%;
+  padding-top: 13%;
   padding-bottom: 4%;
-  padding-left: 12.8%;
+  padding-left: 12.3%;
   color: #00D970;
   font-size: 110%;
 }
