@@ -8,7 +8,15 @@ Dos, is a reimagined version of the classic card game, Uno.  Written in JavaScri
 
 Application Link: [Dos](https://kelvin-k-cho.github.io/dos/)
 
-![Game](https://s3-us-west-1.amazonaws.com/hallyu-dev/images/Screen+Shot+2018-02-16+at+10.10.20+PM.png)
+![Game](https://s3-us-west-1.amazonaws.com/hallyu-dev/images/Screen+Shot+2018-03-09+at+10.08.22+AM.png)
+
+# Technology
+
+Dos is designed with the following:
+
+- Vanilla Javascript for overall gameplay.
+- HTML/CSS for visuals and styling.
+- Webpack to bundle and modularize program, enforcing Separation of Concerns.
 
 # Features
 
@@ -48,13 +56,5 @@ document.addEventListener("click", function(event) {
 }.bind(this));
 ```
 
-# Technology
-
-Dos is designed with the following:
-
-- Vanilla Javascript for overall gameplay.
-- HTML/CSS for visuals and styling.
-- Webpack to bundle and modularize program, enforcing Separation of Concerns.
-
 # Future Implementation
-+ Add a modal with an event listener to display how to play to users.
++ Add styling to drawing cards.
