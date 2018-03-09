@@ -112,10 +112,10 @@ img {
 }
 
 #welcomeMessage {
-  width: 26.6%;
-  height: 29.2%;
-  top: 46.5%;
-  left: 5.5%;
+  width: 24.2%;
+  height: 40.2%;
+  top: 10.5%;
+  right: 10%;
   padding-left: 2.4%;
   background-color: #005780;
   font-family: "Montserrat-Light";
@@ -147,8 +147,8 @@ img {
 #triangleDown {
   width: 5.64%;
   top: 100%;
-  left: 0%;
-  padding-bottom: 4%; /* Width / 1.41 */
+  right: 0%;
+  padding-bottom: 4%;
   overflow: hidden;
   position: absolute;
 }
@@ -160,16 +160,16 @@ img {
   left: 0%;
   content: "";
   background-color: #005780;
-  -webkit-transform-origin: left bottom;
-  -moz-transform-origin: left bottom;
-  -ms-transform-origin: left bottom;
-  -o-transform-origin: left bottom;
-  transform-origin: left bottom;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  -webkit-transform-origin: right bottom;
+  -moz-transform-origin: right bottom;
+  -ms-transform-origin: right bottom;
+  -o-transform-origin: right bottom;
+  transform-origin: right bottom;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
   position: absolute;
 }
 
