@@ -538,7 +538,7 @@ img {
 
 #unoCards {
   width: 37.88%;
-  padding-top: 20%;
+  padding-top: 25%;
   padding-right: 4.5%;
   padding-bottom: 5%;
   padding-left: 1.5%;
@@ -556,7 +556,7 @@ img {
   background-color: #EEEEEE;
   padding-top: 13%;
   padding-bottom: 4%;
-  padding-left: 12.3%;
+  padding-left: 14.3%;
   color: #00D970;
   font-size: 110%;
 }
@@ -596,6 +596,11 @@ img {
   width: 25.07%;
   padding-right: 2.5%;
   display: inline-block;
+}
+
+.bold {
+  font-weight: 800;
+  color: blue;
 }
 
 .italic {
